@@ -1,0 +1,21 @@
+{
+	"name": "pbkdf2-hasher",
+	"description": "Password hashing and verification for Node using the built-in crypto.pbkdf2 (HMAC-SHA1).",
+	"version": "0.0.1",
+	"author": "Mike M. Lin <mike@mpeak.co>",
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/mpeak/pbkdf2-hasher.git"
+	},
+	"dependencies": {
+		"btoa": ">= 1.1.0"
+	},
+	"engines": {
+		"node": ">= 0.5.5"
+	},
+	"licenses": [{
+		"type": "MIT",
+		"url": "http://www.opensource.org/licenses/MIT"
+	}],
+	"keywords": ["pbkdf2", "hasher", "hash", "password"]
+}
