@@ -45,10 +45,8 @@ function generate(password, callback) {
 // recalculating it. The callback gets two arguments (err, isVerified).
 function verify(password, hashedPassword, callback) {
 	var parts = hashedPassword.split('$');
-	console.log('parts', parts);
 	generateHash(password, parts[2], parseInt(parts[1], 10), 20, function(err, key) {
 		if (err) return callback(err);
-		console.log('key', key);
 		callback(null, hashedPassword == key);
 	});
 }
